@@ -2,8 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+  font-family: vol7;
+  src: url('../fonts/Xolonium-Regular.ttf');
+}
+
+@font-face {
+  font-family: vol7bold;
+  src: url('../fonts/Xolonium-Bold.ttf');
+}
+
+@font-face {
+  font-family: Akira;
+  src: url('../fonts/Akira\ Expanded\ Demo.otf');
+}
+
+
 body{
-    background-image: url('../images/Vector.png'); /* adjust path if needed */
+
     background-size: 35rem; /* or 'contain' or 'auto' */
     background-repeat: no-repeat;
     background-position: center calc(50% + 70px);
@@ -12,10 +28,18 @@ body{
     overflow: hidden;
     color: white;
     font-family: 'Roboto Mono', monospace;
-    padding: 2.3rem 7rem;
+    padding: 5rem 7rem;
     padding-bottom: 0px;
 
     
+}
+
+#bgimg{
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 35rem;
 }
 
 .topdiv{
@@ -26,8 +50,7 @@ body{
 }
 .subdiv{
     flex:1;
-    box-shadow: 0 0 0 .5px white;
-    
+    box-shadow: 0  0 0 .5px white;
 }
 .sidediv{
     padding-left:1rem ;
@@ -63,9 +86,10 @@ body{
     height: 30rem;
 }
 .centertext>span{
-font-size: 12rem;
+    letter-spacing: .5rem;
+font-size: 10rem;
 font-weight: 600;
-font-family: "Space Mono";
+font-family: "Akira";
 }
 
 .centertext>button{
@@ -138,9 +162,9 @@ font-family: "Space Mono";
 
 .vol7{
     display: flex;
-    font-family: "Bold";
+    font-family: "vol7bold";
     font-style: italic;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -200,7 +224,7 @@ font-family: 'Montserrat';
   background-color: white; /* This is the "border" color */
   clip-path: polygon(1% 38%,55% 38%,74% 0, 99% 0, 99% 100%,  1% 100%);
   z-index: 0;
-  transform: scale(1.04); /* Make it slightly larger to appear as border */
+  transform: scale(1.03); /* Make it slightly larger to appear as border */
 }
 
 .bricons{
@@ -220,3 +244,17 @@ font-family: 'Montserrat';
 .ghatiya-wrapper{
     position: relative;
 }
+
+    spline-viewer {
+
+      position: absolute;
+      top: 55%; 
+      left: 50%; 
+      transform: translate(-50%, -50%) scale(.65);
+      z-index: -10;
+
+    }
+
+    .zindexx{
+        z-index: 5;
+    }   
