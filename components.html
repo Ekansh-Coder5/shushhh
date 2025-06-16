@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slanted Border Box</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+      margin: 0;
+      height: 100vh;
+      background: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Courier New', monospace;
+    }
+
+    .slanted-box {
+      font-weight: bold;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+      aspect-ratio: 8;
+      height: 40px;
+      font-family: "Tomorrow";
+      position: relative;
+      background: white;
+      color: black;
+      padding: 1.5rem 3rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      /* Proper slanted bottom-left corner */
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+    
+    }
+
+    .startarrow {
+      width: 1.7rem;
+      position: absolute;
+      font-size: 2rem;
+      right: 2.6rem;
+    }
+
+    @media (max-width: 600px) {
+      .slanted-box {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+      }
+
+      .slanted-box::after {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slanted-box">PLAY <img class="startarrow" src="assets/images/arrow.svg"></div>
+
+</body>
+</html>
