@@ -17,9 +17,23 @@
   src: url('../fonts/Akira\ Expanded\ Demo.otf');
 }
 
+@font-face {
+  font-family: Enox;
+  src: url('../fonts/WarriotTech-rvdRp.ttf');
+}
+
+@font-face {
+  font-family: EnoxI;
+  src: url('../fonts/WarriotTechItalic-YqOoa.ttf');
+}
+
+@font-face {
+  font-family: Discopia;
+  src: url('../fonts/Discopia\ Regular.ttf');
+}
 
 body{
-
+    pointer-events: none;
     background-size: 35rem; /* or 'contain' or 'auto' */
     background-repeat: no-repeat;
     background-position: center calc(50% + 70px);
@@ -27,9 +41,10 @@ body{
     height: 98vh;
     overflow: hidden;
     color: white;
-    font-family: 'Roboto Mono', monospace;
-    padding: 5rem 7rem;
+    font-family: 'Space Grotesk', monospace;
+    padding: 3rem 7rem;
     padding-bottom: 0px;
+    padding-top: 0;
 
     
 }
@@ -43,12 +58,15 @@ body{
 }
 
 .topdiv{
-
+    margin-top: 3rem;
+z-index: 20;
     box-shadow: 0 0 0 .5px white;
     display: flex;
     font-size: 15px;
 }
 .subdiv{
+    
+    z-index: 20;
     flex:1;
     box-shadow: 0  0 0 .5px white;
 }
@@ -78,23 +96,30 @@ body{
     margin-bottom: 0;
 }
 
+.cryptit{
+    pointer-events: none;
+}
 .centertext{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 30rem;
+    pointer-events: none;
+    z-index: 20;
 }
 .centertext>span{
     letter-spacing: .5rem;
 font-size: 10rem;
-font-weight: 600;
+    z-index: 20;
+
 font-family: "Akira";
 }
 
 .centertext>button{
     padding: .7rem 5.7rem;
     background-color: white;
+    pointer-events: all !important;
 
 }
 .cineees>p{
@@ -149,7 +174,9 @@ font-family: "Akira";
       align-items: center;
       gap: 1rem;
       /* Proper slanted bottom-left corner */
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));}
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+    pointer-events: all;
+    }
 .startarrow {
       width: 1.7rem;
       position: absolute;
@@ -246,12 +273,11 @@ font-family: 'Montserrat';
 }
 
     spline-viewer {
-
+        pointer-events: all;
       position: absolute;
-      top: 55%; 
-      left: 50%; 
-      transform: translate(-50%, -50%) scale(.65);
-      z-index: -10;
+      left: 0; 
+
+      z-index: 0;
 
     }
 
