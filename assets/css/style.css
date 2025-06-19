@@ -272,13 +272,13 @@ font-family: 'Montserrat';
     position: relative;
 }
 
-    spline-viewer {
-        pointer-events: all;
-      position: absolute;
-      left: 0; 
-
-      z-index: 0;
-
+spline-viewer {
+    pointer-events: all;
+    position: absolute;
+    left: 0; 
+    z-index: 0;
+    transform: scale(1);
+    animation: globe 4s ease-out forwards;
     }
 
     .zindexx{
