@@ -345,6 +345,7 @@ border-right: 0.7px solid rgba(255, 255, 255, 0.60);
 .inputfield{
     display: flex;
     gap: 1rem;
+     
 }
 .loginupperdiv{
     display: flex;
@@ -357,9 +358,9 @@ border-right: 0.7px solid rgba(255, 255, 255, 0.60);
     flex-direction: column;
     color: #FFF;
 text-shadow: 0px 0px 8px #FFF;
-
+width: 70%;
 font-family: 'Orbitron';
-font-size: 2rem;
+font-size: 1.4rem;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
@@ -379,6 +380,7 @@ gap: 1.9rem;
     text-shadow: 0px 0px 5px #FFF;
     font-weight: 300;
     border: none;
+
 }
 
 .detailsinput {
@@ -388,8 +390,7 @@ gap: 1.9rem;
 
 .detailsinput::placeholder {
   color: white;
-  animation: blink 1s infinite;
-  transition: opacity 0.5s ease-in-out;
+     animation: blink 1s infinite;
 }
 
 /* Vendor prefixes for better compatibility */
