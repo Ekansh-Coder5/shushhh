@@ -62,10 +62,12 @@
 
 
 body{
+    
     background-size: 35rem; /* or 'contain' or 'auto' */
     background-repeat: no-repeat;
     background-position: center calc(50% + 70px);
     background-color: black;
+    background-image: url(../asets/images/noisebg.png);
     height: 98vh;
     overflow: hidden;
     color: white;
@@ -108,3 +110,140 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
+.teamdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    gap: 11rem;
+    padding-bottom: 0;
+}
+
+.avatar{
+    color: #FFF;
+font-family: 'Orbitron';
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+
+border: 1px solid #FFF;
+display: flex;
+align-items: center;
+justify-content: center;
+aspect-ratio: 1;
+width: 20%;
+height: 20%;
+text-align: center;
+
+}
+
+.maindetails{
+        color: #FFF;
+color: #FFF;
+text-shadow: 0px 0px 8px #FFF;
+font-family: 'Orbitron';
+font-size: 1.7rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+border: 1px solid #FFF;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+aspect-ratio: 2.5;
+width: 50%;
+gap: 2.35rem;
+padding-left: 1.7rem;
+}
+.bottomdetails{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 1rem;
+    padding: 2rem;
+    gap: 11rem;
+}
+
+.level{
+font-family: 'Orbitron';
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+
+border: 1px solid #FFF;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 18%;
+text-align: center; 
+color: black;
+border: 1px solid #FFF;
+background: #FFF;
+box-shadow: 0px 0px 13px 0px #FFF;
+padding: .8rem 2rem;
+}
+
+.aboutguidelines{
+display: flex;
+flex-direction: column;
+width: 52%;
+gap: 2.35rem;
+}
+.arrowbox{
+    transform: rotate(90deg);
+    background-color: white;
+    padding: .8rem;
+    border: 1px solid #FFF;
+background: #FFF;
+box-shadow: 0px 0px 8px 0px #FFF;
+}
+.arrowbox>img{
+    height: 2rem;
+}
+.guidelinesdetails{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+text-shadow: 0px 0px 8px #FFF;
+
+}
+.textt{
+    margin-left: 2.5rem;
+    font-family: 'Orbitron';
+font-size: 2.1rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.bottomright{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border-radius: .5rem;
+    padding-top: .3rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
+}
+.bottomdiv{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35rem;
+}
+.bottomdiv>p{
+    font-size: .7rem;
+    font-weight: normal;
+    opacity: .8;
+    margin: 0;
+    padding: 0;
+}
+.bottomdiv>img{
+    height: 8.5rem;
+    margin-bottom: 1.5rem;
+}
+
